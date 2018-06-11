@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="manifest" href="./manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+</head>
+    
+<body>
+    <div class="content">
+        <form>
+            <div class="error-inline">
+
+            </div>
+            <div class="form-group">
+                <input tabindex="0" type="text" aria-label="full name" autocomplete="off" placeholder="Full Name (Optional)" id="fullname" /> 
+            </div>
+            <div class="form-group">
+                <input type="text" autocomplete="off" aria-label="email" placeholder="Email Address" id="email" />
+                <span class="email-span">e.g. testname@example.com. This will user for sign-in to your account.</span>
+            </div>
+            <div class="form-group">
+                <input type="text" autocomplete="off" aria-label="username" placeholder="Username" id="username" />
+                <span class="email-span">e.g. mkpatel </span>
+            </div>
+            <div class="form-group">
+                <input type="password" autocomplete="off" aria-label="password" placeholder="Password" id="password" /> 
+                <ul>
+                    <li class="email-span">Must have of 8 to 20 characters in length.</li>
+                    <li class="email-span">Must have atleast one uppercase or a number or symbol (!@#$%^&*()_)</li>                    
+                </ul>
+                <meter max="4" id="meter-password-strength"></meter>
+                <span class="email-span" id="text-password-strength"></span>
+            </div>
+            <input type="button" class="ap-btn" value="Sign up" aria-label="Sign up"/>
+            <div class="form-group">
+                <img src="./ajax-loader.gif" id="gif-loader" alt="Loading..." class="loader-gif" aria-label="loader" />
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
